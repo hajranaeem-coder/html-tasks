@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+  </head>
+  <style>
+    
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    background: #f4f4f4;
+}
+
+.container {
+    padding: 20px 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+   
+  
+}
+.butns{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+   border: 0px;
+   background-color: black;
+   color: beige;
+}
+
+  </style>
+  <body>
+  <div class="container">
+    <h1 ">Calculator</h1>
+
+    <label>Enter number 1:</label>
+    <input style="border-radius: 10px; height: 20px;" type="number" id="num1"><br><br>
+
+    <label>Enter number 2:</label>
+    <input style="border-radius: 10px; height: 20px;"  type="number" id="num2"><br><br>
+
+    <button class="butns" onclick="addIt()">Add(+)</button>
+    <button class="butns"  onclick="subIt()">Subtract (-)</button>
+    <button class="butns"  onclick="multiplyIt()">Multiply (x)</button>
+    <button class="butns"  onclick="divideIt()">Divide (/)</button>
+</div>
+
+    <script>
+      function addIt() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        let sum = a + b;
+
+        alert(sum);
+      }
+       function subIt() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        let Subtract = a - b;
+
+        alert(Subtract);
+      }
+       function multiplyIt() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        let Multiply = a * b;
+
+        alert(Multiply);
+      }
+       function divideIt() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        let divide = a / b;
+
+        alert(divide);
+      }
+    </script>
+  </body>
+</html>
