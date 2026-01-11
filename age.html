@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Age verification</h1>
+    <label>Enter your age:</label>
+    <input type="number" id="age" />
+    <button onclick="giveAge()">Confirm</button>
+    <script>
+      function giveAge(){
+          let age= Number(document.getElementById('age').value);
+          console.log(age);
+          if(age >=18){
+            window.location.href = "18+.html";
+          }
+          else{
+              alert("You are not Eligible!")
+          }
+      }
+    </script>
+  </body>
+</html>
