@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Gender</h1>
+    <label>Enter your gender:</label>
+    <input type="text" id="gender" />
+    <button onclick="giveGender()">Confirm</button>
+    <script>
+      function giveGender(){
+          let gender= document.getElementById('gender').value;
+          console.log(gender);
+          if(gender=='female'){
+            window.location.href = "female.html";
+          }
+          else if(gender=='male'){
+                window.location.href = "male.html";
+          }
+      }
+    </script>
+  </body>
+</html>
